@@ -1,0 +1,230 @@
+/* Ще наявні кольори: 
+#EEEEEE - колір рамки works-list
+#ECECEC - рамка в хедері */
+
+/* GENERAL STYLES */
+:root {
+  --main-background-color: #ffffff;
+  --accent-color: #2196f3;
+  --footer-font: #2f303a; /* колір першої секції постера і футера  */
+  --main-font-color: #212121; /* основний колір тексту */
+  --secondary-font-color: #757575;
+  --section-color: #f5f4fa; /*  цвет секції наша команда */
+  --logo-font: 'Raleway', sans-serif;
+  --main-font: 'Roboto', sans-serif;
+  --main-font-size: 14px;
+}
+body {
+  background-color: var(--main-background-color);
+  font-family: var(--main-font);
+  color: var(--main-font-color);
+}
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+.footer-logo {
+  color: var(--main-background-color);
+}
+.btn {
+  cursor: pointer; /* пальчик на кнопках */
+}
+/* Чи робимо ХОВЕР і ФОКУС НА лого ? */
+/* .logo:hover,
+.logo:focus, */
+.logo-first-part,
+.header-nav-link:hover,
+.header-nav-link:focus,
+.header-link:hover,
+.header-link:focus,
+.footer-link:hover,
+.footer-link:focus,
+.address-link:hover,
+.address-link:focus,
+.current {
+  color: var(--accent-color);
+}
+.link {
+  text-decoration: none; /* прибирає підкреслення посилань */
+}
+.list {
+  list-style: none; /* прибирає крапочки списку */
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* HEADER NAV */
+.header-nav-link,
+.header-link {
+  font-weight: 500;
+  font-size: var(--main-font-size);
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+/* Колір навігації темно-сірий */
+.header-nav-link {
+  color: var(--main-font-color);
+}
+.header-nav-link.current {
+  color: var(--accent-color);
+}
+.header-link {
+  color: var(--secondary-font-color);
+}
+/* MAIN SECTION (FIRST SECTION) */
+.main-section {
+  background-color: var(--footer-font);
+}
+.main-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-background-color);
+}
+.main-btn {
+  /* inherit добавила*/
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-background-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* OUR BENEFITS SECTION */
+.benefits-header {
+}
+.benefits-item {
+  font-weight: 700;
+  font-size: var(--main-font-size);
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-font-color);
+}
+.benefits-text {
+  font-weight: 400;
+  font-size: var(--main-font-size);
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: var(--secondary-font-color);
+}
+
+/* SERVICES (OUR WORKS) */
+.servises-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-font-color);
+}
+
+/* TEAM SECTION */
+.team {
+  background: var(--section-color);
+}
+.team-list {
+  background: var(--main-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-font-color);
+}
+.team-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-font-color);
+}
+
+/* FOOTER */
+.footer {
+  background: var(--footer-font);
+}
+.footer-address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: var(--main-font-size);
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+.address-link {
+  color: var(--main-background-color);
+}
+.footer-link {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* PORTFOLIO */
+/*  OUR WORKS */
+.our-works {
+}
+.works-btn {
+  /* добавила inherit */
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  background: var(--section-color);
+  color: var(--main-font-color);
+}
+/* hover + focus кнопкам */
+.works-btn:active,
+.works-btn:hover,
+.works-btn:focus {
+  background: var(--accent-color);
+  color: var(--main-background-color);
+}
+.works-list {
+  border: 1px solid #eeeeee;
+}
+.works-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--main-font-color);
+}
+.works-item {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--secondary-font-color);
+}
