@@ -49,10 +49,12 @@ body {
   color: var(--accent-color);
 }
 .link {
-  text-decoration: none; /* прибирає підкреслення посилань */
+  text-decoration: none; /* прибирає підкреслення посилань. Звичайний текст. */
 }
 .list {
-  list-style: none; /* прибирає крапочки списку */
+  margin: 0; /* прибираєм відступи */
+  padding: 0;
+  list-style: none; /* прибираєм крапочки списку */
 }
 .visually-hidden {
   position: absolute;
@@ -66,7 +68,20 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/* Розміщення елементів */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto; /* margin-left margin-right - auto */
+  outline: 1px solid tomato;
+}
 /* HEADER NAV */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .header-nav-link,
 .header-link {
   font-weight: 500;
@@ -74,8 +89,6 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
-
-/* Колір навігації темно-сірий */
 .header-nav-link {
   color: var(--main-font-color);
 }
@@ -85,8 +98,11 @@ body {
 .header-link {
   color: var(--secondary-font-color);
 }
+
 /* MAIN SECTION (FIRST SECTION) */
 .main-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
   background-color: var(--footer-font);
 }
 .main-text {
@@ -97,6 +113,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-background-color);
+  /* скидаю марджин */
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 .main-btn {
   /* inherit добавила*/
@@ -110,14 +129,27 @@ body {
   letter-spacing: 0.06em;
   color: var(--main-background-color);
   background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   border-radius: 4px;
+  padding: 10px 32px; /* відступи тексту на кнопці */
+  text-align: center;
+  min-width: 216px;
 }
-
+.main-btn:active,
+.main-btn:hover,
+.main-btn:focus {
+  background: #188ce8;
+}
 /* OUR BENEFITS SECTION */
 .benefits-header {
 }
+.benefits-list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .benefits-item {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: var(--main-font-size);
   line-height: calc(16 / 14);
@@ -126,6 +158,8 @@ body {
   color: var(--main-font-color);
 }
 .benefits-text {
+  margin-top: 0;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: var(--main-font-size);
   line-height: calc(24 / 14);
@@ -136,6 +170,8 @@ body {
 /* SERVICES (OUR WORKS) */
 .servises-title,
 .team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
@@ -146,6 +182,8 @@ body {
 
 /* TEAM SECTION */
 .team {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background: var(--section-color);
 }
 .team-list {
@@ -155,6 +193,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .team-member {
+  margin-top: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -163,6 +202,7 @@ body {
   color: var(--main-font-color);
 }
 .team-position {
+  margin-top: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -173,6 +213,8 @@ body {
 
 /* FOOTER */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--footer-font);
 }
 .footer-address {
@@ -205,7 +247,6 @@ body {
   background: var(--section-color);
   color: var(--main-font-color);
 }
-/* hover + focus кнопкам */
 .works-btn:active,
 .works-btn:hover,
 .works-btn:focus {

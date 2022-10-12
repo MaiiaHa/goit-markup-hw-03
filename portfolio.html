@@ -10,103 +10,105 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-
-  <header class="header">
-    <a class="logo link" href="./index.html">
-      <span class="logo-first-part">Web</span>Studio</a>
-    <nav>
-      <ul class="header-nav list">
-        <li class="header-nav-list"><a class="header-nav-link link" href="./index.html">Студія</a></li>
-        <li class="header-nav-list"><a class="header-nav-link link current" href="./portfolio.html">Портфоліо</a></li>
-        <li class="header-nav-list"><a class="header-nav-link link" href="./index.html">Контакти</a></li>
-      </ul>
-    </nav>
-    <ul class="list">
-      <li><a class="header-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-      <li><a class="header-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-    </ul>
-  </header>
-
-  <main>
-    <!-- секцію добавила -->
-    <section>
-      <h1 class="our-works visually-hidden">Наші роботи</h1>
+  <div class="container">
+    <header class="header">
+      <a class="logo link" href="./index.html">
+        <span class="logo-first-part">Web</span>Studio</a>
+      <nav>
+        <ul class="header-nav list">
+          <li class="header-nav-list"><a class="header-nav-link link" href="./index.html">Студія</a></li>
+          <li class="header-nav-list"><a class="header-nav-link link current" href="./portfolio.html">Портфоліо</a></li>
+          <li class="header-nav-list"><a class="header-nav-link link" href="./index.html">Контакти</a></li>
+        </ul>
+      </nav>
       <ul class="list">
-        <li><button class="works-btn btn" type="button">Усі</button></li>
-        <li><button class="works-btn btn" type="button">Веб-сайти</button></li>
-        <li><button class="works-btn btn" type="button">Додатки</button></li>
-        <li><button class="works-btn btn" type="button">Дизайн</button></li>
-        <li><button class="works-btn btn" type="button">Маркетинг</button></li>
+        <li><a class="header-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="header-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
-      <ul class="list">
-        <li class="works-list">
-          <img src="./images/website-techno.jpg" alt="Технокряк вебсайт" width="370" height="294">
-          <h2 class="works-title">Технокряк</h2>
-          <p class="works-item">Веб-сайт</p>
-        </li>
-        <li class="works-list">
-          <img src="./images/design-poster.jpg" alt="" width="370" height="294">
-          <h2 class="works-title">Постер New Orlean vs Golden Star</h2>
-          <p class="works-item">Дизайн</p>
-        </li>
-        <li class="works-list">
-          <img src="./images/application-restaurant.jpg" alt="" width="370" height="294">
-          <h2 class="works-title">Ресторан Seafood</h2>
-          <p class="works-item">Додаток</p>
-        </li>
-        <li class="works-list">
-          <img src="./images/marketing-prime.jpg" alt="" width="370" height="294">
-          <h2 class="works-title">Проєкт Prime</h2>
-          <p class="works-item">Маркетинг</p>
-        </li>
-        <li class="works-list">
-          <!-- як в такому випадку коли є назва на англ.мові, але сайт весь на укр. -->
-          <img src="./images/application-boxes.jpg" alt="Проєкт Boxes додаток" width="370" height="294">
-          <h2 class="works-title">Проєкт Boxes</h2>
-          <p class="works-item">Додаток</p>
-        </li>
-        <li class="works-list">
-          <img src="./images/website-inspiration.jpg" alt="Inspiration has no Borders вебсайт" width="370" height="294">
-          <h2 class="works-title">Inspiration has no Borders</h2>
-          <p class="works-item">Веб-сайт</p>
-        </li>
-        <li class="works-list">
-          <img src="./images/design-edition.jpg" alt="Видання Limited Edition дизайн" width="370" height="294">
-          <h2 class="works-title">Видання Limited Edition</h2>
-          <p class="works-item">Дизайн</p>
-        </li>
-        <li class="works-list">
-          <img src="./images/marketing-lab.jpg" alt="Проєкт LAB маркетинг" width="370" height="294">
-          <h2 class="works-title">Проєкт LAB</h2>
-          <p class="works-item">Маркетинг</p>
-        </li>
-        <li class="works-list">
-          <img src="./images/application-business.jpg" alt="Growing Business додаток" width="370" height="294">
-          <h2 class="works-title">Growing Business</h2>
-          <p class="works-item">Додаток</p>
-        </li>
-      </ul>
-    </section>
-  </main>
+    </header>
 
-  <footer class="footer">
-    <a class="footer-logo logo link" href="./index.html">
-      <span class="logo-first-part">Web</span>Studio</a>
-    <address class="footer-address">
-      <ul class="list">
-        <li><a class="address-link link" href="https://goo.gl/maps/5Z18BUfWbixnfmwy8" target="_blank"
-            rel="noopener noreferrer nofollow">м. Київ,
-            пр-т
-            Лесі Українки, 26</a></li>
-        <li><a class="footer-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="footer-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
-    </address>
-  </footer>
+    <main>
+      <section>
+        <h1 class="our-works visually-hidden">Наші роботи</h1>
+        <ul class="list">
+          <li><button class="works-btn btn" type="button">Усі</button></li>
+          <li><button class="works-btn btn" type="button">Веб-сайти</button></li>
+          <li><button class="works-btn btn" type="button">Додатки</button></li>
+          <li><button class="works-btn btn" type="button">Дизайн</button></li>
+          <li><button class="works-btn btn" type="button">Маркетинг</button></li>
+        </ul>
+        <ul class="list">
+          <li class="works-list">
+            <img src="./images/website-techno.jpg" alt="Технокряк вебсайт" width="370" height="294">
+            <h2 class="works-title">Технокряк</h2>
+            <p class="works-item">Веб-сайт</p>
+          </li>
+          <li class="works-list">
+            <img src="./images/design-poster.jpg" alt="" width="370" height="294">
+            <h2 class="works-title">Постер New Orlean vs Golden Star</h2>
+            <p class="works-item">Дизайн</p>
+          </li>
+          <li class="works-list">
+            <img src="./images/application-restaurant.jpg" alt="" width="370" height="294">
+            <h2 class="works-title">Ресторан Seafood</h2>
+            <p class="works-item">Додаток</p>
+          </li>
+          <li class="works-list">
+            <img src="./images/marketing-prime.jpg" alt="" width="370" height="294">
+            <h2 class="works-title">Проєкт Prime</h2>
+            <p class="works-item">Маркетинг</p>
+          </li>
+          <li class="works-list">
+            <!-- як в такому випадку коли є назва на англ.мові, але сайт весь на укр. -->
+            <img src="./images/application-boxes.jpg" alt="Проєкт Boxes додаток" width="370" height="294">
+            <h2 class="works-title">Проєкт Boxes</h2>
+            <p class="works-item">Додаток</p>
+          </li>
+          <li class="works-list">
+            <img src="./images/website-inspiration.jpg" alt="Inspiration has no Borders вебсайт" width="370"
+              height="294">
+            <h2 class="works-title">Inspiration has no Borders</h2>
+            <p class="works-item">Веб-сайт</p>
+          </li>
+          <li class="works-list">
+            <img src="./images/design-edition.jpg" alt="Видання Limited Edition дизайн" width="370" height="294">
+            <h2 class="works-title">Видання Limited Edition</h2>
+            <p class="works-item">Дизайн</p>
+          </li>
+          <li class="works-list">
+            <img src="./images/marketing-lab.jpg" alt="Проєкт LAB маркетинг" width="370" height="294">
+            <h2 class="works-title">Проєкт LAB</h2>
+            <p class="works-item">Маркетинг</p>
+          </li>
+          <li class="works-list">
+            <img src="./images/application-business.jpg" alt="Growing Business додаток" width="370" height="294">
+            <h2 class="works-title">Growing Business</h2>
+            <p class="works-item">Додаток</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer-logo logo link" href="./index.html">
+        <span class="logo-first-part">Web</span>Studio</a>
+      <address class="footer-address">
+        <ul class="list">
+          <li><a class="address-link link" href="https://goo.gl/maps/5Z18BUfWbixnfmwy8" target="_blank"
+              rel="noopener noreferrer nofollow">м. Київ,
+              пр-т
+              Лесі Українки, 26</a></li>
+          <li><a class="footer-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li><a class="footer-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </address>
+    </footer>
+  </div>
 </body>
 
 </html>
