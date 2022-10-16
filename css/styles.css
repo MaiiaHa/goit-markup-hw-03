@@ -275,7 +275,7 @@ img {
   color: var(--secondary-font-color);
 }
 .member {
-  padding: 30px 60px;
+  padding: 30px 0;
   /* 70 не поміщається */
 }
 /* FOOTER */
